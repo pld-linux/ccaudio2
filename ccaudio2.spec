@@ -8,6 +8,8 @@ Group:		Libraries
 Source0:	ftp://ftp.gnu.org/gnu/ccaudio/%{name}-%{version}.tar.gz
 # Source0-md5:	dcb6f88a2495249a2dede67230535b80
 URL:		http://www.gnu.org/software/ccaudio
+BuildRequires:	libgsm-devel
+BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
