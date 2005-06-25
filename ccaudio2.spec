@@ -7,7 +7,7 @@ License:	GPL
 Group:		Libraries
 Source0:	ftp://ftp.gnu.org/gnu/ccaudio/%{name}-%{version}.tar.gz
 # Source0-md5:	dcb6f88a2495249a2dede67230535b80
-URL:		http://www.gnu.org/software/ccaudio
+URL:		http://www.gnu.org/software/ccaudio/
 BuildRequires:	libgsm-devel
 BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -17,7 +17,7 @@ The GNU ccAudio package offers a highly portable C++ class framework
 for developing applications which manipulate audio streams and various
 disk based audio file formats. At the moment ccaudio is primarly a
 class framework for handling .au, .wav (RIFF), and various .raw audio
-encoding formats under Posix and win32 systems, though it may expand
+encoding formats under POSIX and Win32 systems, though it may expand
 to become a general purpose audio and soundcard support library.
 Support for controlling CD audio devices has recently been added as
 well as support for codecs and other generic audio processing
@@ -26,11 +26,12 @@ services.
 %description -l pl
 Pakiet GNU ccAudio oferuje przeno¶n± klasê C++ do tworzenia aplikacji
 zmieniaj±cych strumienie d¼wiêkowe i ró¿ne formaty plików na dyskach.
-Aktualnie obs³uguje pliki .au, .wav (RIFF) i ró¿ne formaty .raw
-zakodowane w Posix i systemach win32, mo¿e siê jednak rozrosn±æ aby
-zostaæ bibliotek± ogólnego u¿ytku do d¼wiêku i kart d¼wiêkowych.
-Ostatnio zosta³a dodana obs³uga d¼wiêkowych CD, jak tak¿e obs³uga
-kodeków i innych serwisów przetwarzaj±cych d¼wiêk.
+Aktualnie obs³uguje pliki .au, .wav (RIFF) i ró¿ne formaty kodowania
+.raw w systemach zgodnych z POSIX oraz Win32, mo¿e siê jednak
+rozrosn±æ, aby zostaæ bibliotek± ogólnego u¿ytku do d¼wiêku i kart
+d¼wiêkowych. Ostatnio zosta³a dodana obs³uga sterowania urz±dzeniami
+z p³ytami CD Audio, jak tak¿e obs³uga kodeków i innych ogólnych us³ug
+przetwarzaj±cych d¼wiêk.
 
 %package devel
 Summary:	Header files for ccaudio2 library
