@@ -1,5 +1,5 @@
 Summary:	GNU ccAudio2 - a C++ class framework for processing audio files
-Summary(pl.UTF-8):   GNU ccAudio2 - klasa C++ do przetwarzania plików dźwiękowych
+Summary(pl.UTF-8):	GNU ccAudio2 - klasa C++ do przetwarzania plików dźwiękowych
 Name:		ccaudio2
 Version:	0.7.7
 Release:	1
@@ -35,7 +35,7 @@ przetwarzających dźwięk.
 
 %package devel
 Summary:	Header files for ccaudio2 library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki ccaudio2
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki ccaudio2
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -47,7 +47,7 @@ Pliki nagłówkowe biblioteki ccaudio2.
 
 %package static
 Summary:	Static ccaudio2 library
-Summary(pl.UTF-8):   Statyczna biblioteka ccaudio2
+Summary(pl.UTF-8):	Statyczna biblioteka ccaudio2
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
