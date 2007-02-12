@@ -1,5 +1,5 @@
 Summary:	GNU ccAudio2 - a C++ class framework for processing audio files
-Summary(pl):	GNU ccAudio2 - klasa C++ do przetwarzania plików d¼wiêkowych
+Summary(pl.UTF-8):   GNU ccAudio2 - klasa C++ do przetwarzania plikÃ³w dÅºwiÄ™kowych
 Name:		ccaudio2
 Version:	0.7.7
 Release:	1
@@ -23,38 +23,38 @@ Support for controlling CD audio devices has recently been added as
 well as support for codecs and other generic audio processing
 services.
 
-%description -l pl
-Pakiet GNU ccAudio oferuje przeno¶n± klasê C++ do tworzenia aplikacji
-zmieniaj±cych strumienie d¼wiêkowe i ró¿ne formaty plików na dyskach.
-Aktualnie obs³uguje pliki .au, .wav (RIFF) i ró¿ne formaty kodowania
-.raw w systemach zgodnych z POSIX oraz Win32, mo¿e siê jednak
-rozrosn±æ, aby zostaæ bibliotek± ogólnego u¿ytku do d¼wiêku i kart
-d¼wiêkowych. Ostatnio zosta³a dodana obs³uga sterowania urz±dzeniami
-z p³ytami CD Audio, jak tak¿e obs³uga kodeków i innych ogólnych us³ug
-przetwarzaj±cych d¼wiêk.
+%description -l pl.UTF-8
+Pakiet GNU ccAudio oferuje przenoÅ›nÄ… klasÄ™ C++ do tworzenia aplikacji
+zmieniajÄ…cych strumienie dÅºwiÄ™kowe i rÃ³Å¼ne formaty plikÃ³w na dyskach.
+Aktualnie obsÅ‚uguje pliki .au, .wav (RIFF) i rÃ³Å¼ne formaty kodowania
+.raw w systemach zgodnych z POSIX oraz Win32, moÅ¼e siÄ™ jednak
+rozrosnÄ…Ä‡, aby zostaÄ‡ bibliotekÄ… ogÃ³lnego uÅ¼ytku do dÅºwiÄ™ku i kart
+dÅºwiÄ™kowych. Ostatnio zostaÅ‚a dodana obsÅ‚uga sterowania urzÄ…dzeniami
+z pÅ‚ytami CD Audio, jak takÅ¼e obsÅ‚uga kodekÃ³w i innych ogÃ³lnych usÅ‚ug
+przetwarzajÄ…cych dÅºwiÄ™k.
 
 %package devel
 Summary:	Header files for ccaudio2 library
-Summary(pl):	Pliki nag³ówkowe biblioteki ccaudio2
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki ccaudio2
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for ccaudio2 library.
 
-%description devel -l pl
-Pliki nag³ówkowe biblioteki ccaudio2.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe biblioteki ccaudio2.
 
 %package static
 Summary:	Static ccaudio2 library
-Summary(pl):	Statyczna biblioteka ccaudio2
+Summary(pl.UTF-8):   Statyczna biblioteka ccaudio2
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static ccaudio2 library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka ccaudio2.
 
 %prep
