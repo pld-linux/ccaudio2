@@ -5,7 +5,7 @@ Version:	0.7.7
 Release:	1
 License:	GPL
 Group:		Libraries
-Source0:	ftp://ftp.gnu.org/gnu/ccaudio/%{name}-%{version}.tar.gz
+Source0:	http://ftp.gnu.org/gnu/ccaudio/%{name}-%{version}.tar.gz
 # Source0-md5:	69c8ac35070181e4c1b01ec1ede5087e
 URL:		http://www.gnu.org/software/ccaudio/
 BuildRequires:	libgsm-devel
