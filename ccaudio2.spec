@@ -1,15 +1,18 @@
 Summary:	GNU ccAudio2 - a C++ class framework for processing audio files
 Summary(pl.UTF-8):	GNU ccAudio2 - klasa C++ do przetwarzania plików dźwiękowych
 Name:		ccaudio2
-Version:	0.7.7
+Version:	2.1.1
 Release:	1
-License:	GPL
+License:	LGPL v3+
 Group:		Libraries
 Source0:	http://ftp.gnu.org/gnu/ccaudio/%{name}-%{version}.tar.gz
-# Source0-md5:	69c8ac35070181e4c1b01ec1ede5087e
+# Source0-md5:	4d5c18359e27ec57433975a48c65df49
 URL:		http://www.gnu.org/software/ccaudio/
 BuildRequires:	libgsm-devel
 BuildRequires:	libstdc++-devel
+BuildRequires:	pkgconfig
+BuildRequires:	speex-devel
+BuildRequires:	ucommon-devel >= 6.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -38,6 +41,10 @@ Summary:	Header files for ccaudio2 library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki ccaudio2
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	libgsm-devel
+Requires:	libstdc++-devel
+Requires:	speex-devel
+Requires:	ucommon-devel >= 6.0.0
 
 %description devel
 Header files for ccaudio2 library.
@@ -70,6 +77,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+# obsoleted by pkg-config
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/libccaudio2.la
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -78,20 +88,23 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS NEWS README TODO ChangeLog
-%attr(755,root,root) %{_bindir}/*
-%attr(755,root,root) %{_libdir}/lib*.so.*.*.*
-%{_libdir}/%{name}
-%{_mandir}/man1/*
+%doc AUTHORS ChangeLog NEWS README SUPPORT THANKS TODO
+%attr(755,root,root) %{_bindir}/audiotool
+%attr(755,root,root) %{_bindir}/tonetool
+%attr(755,root,root) %{_libdir}/libccaudio2.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libccaudio2.so.2
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/tones.conf
+%{_mandir}/man1/audiotool.1*
+%{_mandir}/man1/tonetool.1*
 
 %files devel
 %defattr(644,root,root,755)
-%doc doc/html/*
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_libdir}/lib*.la
-%{_includedir}/cc++
-%{_pkgconfigdir}/*.pc
+%attr(755,root,root) %{_bindir}/ccaudio2-config
+%attr(755,root,root) %{_libdir}/libccaudio2.so
+%{_includedir}/ccaudio2.h
+%{_pkgconfigdir}/ccaudio2.pc
+%{_mandir}/man1/ccaudio2-config.1*
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/lib*.a
+%{_libdir}/libccaudio2.a
