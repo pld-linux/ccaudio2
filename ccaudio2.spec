@@ -1,18 +1,18 @@
 Summary:	GNU ccAudio2 - a C++ class framework for processing audio files
 Summary(pl.UTF-8):	GNU ccAudio2 - klasa C++ do przetwarzania plików dźwiękowych
 Name:		ccaudio2
-Version:	2.1.3
-Release:	2
+Version:	2.2.0
+Release:	1
 License:	LGPL v3+
 Group:		Libraries
 Source0:	http://ftp.gnu.org/gnu/ccaudio/%{name}-%{version}.tar.gz
-# Source0-md5:	a085ae863cead3da30387d2bc29bbd63
+# Source0-md5:	c38d22592070379b0a8ff8fdf1144ff9
 URL:		http://www.gnu.org/software/ccaudio/
 BuildRequires:	libgsm-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	pkgconfig
 BuildRequires:	speex-devel
-BuildRequires:	ucommon-devel >= 6.0.0
+BuildRequires:	ucommon-devel >= 7.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -44,7 +44,7 @@ Requires:	%{name} = %{version}-%{release}
 Requires:	libgsm-devel
 Requires:	libstdc++-devel
 Requires:	speex-devel
-Requires:	ucommon-devel >= 6.0.0
+Requires:	ucommon-devel >= 7.0.0
 
 %description devel
 Header files for ccaudio2 library.
