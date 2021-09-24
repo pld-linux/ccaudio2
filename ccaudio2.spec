@@ -2,7 +2,7 @@ Summary:	GNU ccAudio2 - a C++ class framework for processing audio files
 Summary(pl.UTF-8):	GNU ccAudio2 - klasa C++ do przetwarzania plików dźwiękowych
 Name:		ccaudio2
 Version:	2.2.0
-Release:	2
+Release:	3
 License:	LGPL v3+
 Group:		Libraries
 Source0:	http://ftp.gnu.org/gnu/ccaudio/%{name}-%{version}.tar.gz
